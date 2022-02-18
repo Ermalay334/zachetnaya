@@ -1,0 +1,71 @@
+ru:
+  layouts:
+    head: "О бибиках"
+    home: "Главная"
+    create_new: "Поделиться своим отзывом "
+    log_in: "Авторизация"
+    log_out: "Выйти"
+    sign_up: "Регистрация"
+    your_posts: "Ваши отзывы"
+  posts:
+    edit:
+      edit_post: "Редактировать"
+      edit_save: "Поделиться"
+      edit_text: "Текст"
+    new:
+      new_post: "Поделиться отзывом"
+      create: "Создать"
+      new_text: "Текст"
+    index:
+      edit: "Редактировать"
+      delete: "Удалить"
+      open: "Открыть в новом окне"
+      author: "Автор"
+      information: "Информация"
+      subscribers: "Подписчиков"
+      under_information_one: "Здесь читаются и пишутся отзывы об автомаболях."
+      under_information_two: "В предложку оформляйте свои отзывы об авто, предлагайте на что сделать обзор нам, пишите интересные отзывы о малоизвестных автомобилях."
+      under_information_three: "Мы уже писали отзывы о многих автомобилях."
+  sessions:
+    new:
+      auth: "Авторизация"
+      log_in: "Войти"
+      email: "E-Mail"
+      password: "Пароль"
+  users:
+    new:
+      register: "Форма регистрации"
+      register_btn: "Зарегистрироваться"
+      email: "E-Mail"
+      password: "Пароль"
+      nickname: "Ваше  имя"
+      confirm_password: "Подтверждение пароля"
+    edit:
+      edit: "Редактирование профиля"
+      email: "E-Mail"
+      password: "Новый пароль"
+      nickname: "Ваше новое имя"
+      confirm_password: "Подтверждение нового пароля"
+      edit_btn: "Сохранить изменения"
+
+  flash:
+    not_log_in: 'Войдите в аккаунт или зарегистрируйтесь.'
+    already_log_in: 'Вы уже вошли в аккаунт.'
+    not_success_signed_in: 'Вы не смогли зарегистрироваться,'
+    success_signed_in: 'ВЫ успешно зарегистрировались,'
+    success_updated: 'Ваш профиль успешно обновлен'
+    change_other_user: 'Нельзя редактировать других пользователей'
+    not_success_logged_in: 'ВЫ не смогли войти под в систему,'
+    success_logged_in: 'Вы успешно вошли в систему'
+    success_logged_out: 'Вы успешно разлогинились.'
+    incorrectly_data: 'Некорректно введенные данные'
+    not_author: 'Вы не являетесь автором этого факта'
+    delete_story: 'История успешно удалена'
+    update_story: 'История успешно обновлена'
+    create_story: 'Вы успешно поделились историей'
+  kaminari:
+    pagination:
+      first: 'В начало'
+      last: 'В конец'
+      next: 'Далее'
+      prev: 'Назад'

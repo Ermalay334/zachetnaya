@@ -1,0 +1,42 @@
+<div class="container">
+  <img src="https://e-pepper.ru/upload/resize_cache/iblock/139/846_665_0/139a8e3888588b46a9d979fee6dd1ccd.jpg" alt="photo" width="911px"/>
+  <div class="card bg-white text-dark">
+    <div class="row my-3">
+      <div class="col-1 mx-3"><img src="https://avatars.mds.yandex.net/get-autoru-vos/1887621/142a3a44c5e21e41b3e1ce78b178fcda/1200x900n" alt="photo" class="image" width="100"/></div>
+      <div class="col-4"><h3 class="my-3"><%= t("layouts.head") %></h3></div>
+      <div class="col-6 my-3"><h3 class="text-end"><%=t("posts.index.subscribers")%>:&nbsp;&nbsp;<%= User.count %></h3></div>
+    </div>
+  </div>
+  <article class="card my-3">
+    <div class="card-header bg-white text-info"><h5><%= t("posts.index.information") %></h5></div>
+    <div class="card-body bg-white text-dark">
+      <%= t("posts.index.under_information_one") %><br/><br/>
+      <%= t("posts.index.under_information_two") %><br/><br/>
+      <%= t("posts.index.under_information_three") %>
+    </div>
+  </article>
+  <% @posts.each do |post| %>
+
+    <article class="card my-3">
+      <div class="card-header bg-white">
+        <div class="row">
+          <div class="col-1"><img src="https://avatars.mds.yandex.net/get-autoru-vos/1887621/142a3a44c5e21e41b3e1ce78b178fcda/1200x900n" alt="photo" class="avatar" width="95"/></div>
+          <div class="col-7 my-2 text-info"><h4><%= post.user.nickname %></h4></div>
+          <div class="row my-2">
+            <div class="col"><h5 class="text-secondary">
+              <time datetime="<%= post.created_at.strftime('%H:%M:%S %Y-%m-%d')%>">
+                <%= post.created_at.strftime('%H:%M:%S %Y-%m-%d') %>
+              </time></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body bg-white text-dark">
+        <pre><%= truncate strip_tags(post.body) %></pre>
+        <%= link_to t("posts.index.open"), post_path(post), class: "btn btn-info text-white" %>
+      </div>
+
+    </article>
+  <% end %>
+  <%= paginate @posts %>
+</div>
